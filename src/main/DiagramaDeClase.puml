@@ -6,22 +6,22 @@ Materia  --> "*" Materia : correlativas
 
 
 class Alumno {
-    private List<Materia> materiasAprobadas;
-    public Alumno(List<Materia> materiasAprobadas) {}
-    public boolean pudeCursarla(Materia materia) {}
+    - List<Materia> materiasAprobadas;
+    + Alumno(List<Materia> materiasAprobadas) {}
+    + boolean pudeCursarla(Materia materia) {}
 }
 
 class Inscripcion {
-    private Alumno alumno;
-    private List<Materia> materiasQueSeQuiereAnotar;
-    public Inscripcion(Alumno alumno, List<Materia> materias) {}
-    public boolean aprobo() {}
+    - Alumno alumno;
+    - List<Materia> materiasQueSeQuiereAnotar;
+    + Inscripcion(Alumno alumno, List<Materia> materias) {}
+    + boolean aprobo() {}
 }
 
 class Materia {
-    private List<Materia> correlativas;
-    public Materia(List<Materia> correlativas) {}
-    public List<Materia> getCorrelativas() {}
+    - List<Materia> correlativas;
+    + Materia(List<Materia> correlativas) {}
+    + List<Materia> getCorrelativas() {}
 }
 
 @enduml
