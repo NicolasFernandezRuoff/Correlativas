@@ -23,7 +23,6 @@ public class Alumno {
 
     public boolean pudeCursarla(Materia materia) {
             return materiasAprobadas.containsAll(materia.getCorrelativas());
-//        return materiasAprobadas.containsAll(materia.getTodasCorrelativas());
     }
 
 }
