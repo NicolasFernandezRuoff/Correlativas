@@ -15,7 +15,7 @@ class Inscripcion {
     - Alumno alumno;
     - List<Materia> materiasQueSeQuiereAnotar;
     + Inscripcion(Alumno alumno, List<Materia> materias) {}
-    + boolean aprobo() {}
+    + boolean aprobada() {}
 }
 
 class Materia {

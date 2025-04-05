@@ -26,7 +26,7 @@ public class Inscripcion {
         return materiasQueSeQuiereAnotar;
     }
 
-    public boolean aprobo() { // La inscripcion
+    public boolean aprobada() { // La inscripcion
         return materiasQueSeQuiereAnotar.stream().allMatch(materia -> alumno.pudeCursarla(materia));
     }
 }
